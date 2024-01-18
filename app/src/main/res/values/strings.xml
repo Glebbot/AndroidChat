@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AndroidChat</string>
+    <string name="weclome_back">Weclome back</string>
+    <string name="login_to_continue">login to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="select_channel">Select channel</string>
+    <string name="channels">Channels</string>
+    <string name="add_channel">Add channel</string>
+    <string name="Enter_the_channel">Enter the channel</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Create_new_channel">Create new channel</string>
+    <string name="Channel_name">Channel name</string>
+    <string name="Back">Back</string>
+    <string name="Ok">Ok</string>
+    <string name="Short_channel_description">Write channel desrription...</string>
+    <string name="Join_an_existing_channel">Join an existing channel</string>
+    <string name="type_a_message">Type a message</string>
+    <string name="set_group_picture">Set channel picture</string>
+    <string name="users_list">Users list</string>
+    <string name="description_channel">Description</string>
+    <string name="logout">Logout</string>
+    <string name="Nickname">Nickname</string>
+    <string name="set_profile_picture">Set profile picture</string>
+    <string name="Bio">Bio</string>
+    <string name="add_biogra">add bio</string>
+    <string name="ChooseTheme">Choose theme</string>
+    <string name="LoginInfo">Login info</string>
+    <string name="logintext">Login text</string>
+    <string name="creatorsinfo">Created by students 1375</string>
+</resources>

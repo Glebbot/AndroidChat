@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="29dp"
+    android:scrollbars="none"
+    android:background="@color/white"
+    tools:context=".activities.SignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/create_new_account"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/background_input"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="21dp"
+            android:paddingEnd="21dp"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/background_input"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="21dp"
+            android:paddingEnd="21dp"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+
+            tools:ignore="RtlSymmetry" />
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/background_input"
+            android:hint="@string/password"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="21dp"
+            android:paddingEnd="21dp"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+
+            tools:ignore="RtlSymmetry,TextFields" />
+        <EditText
+            android:id="@+id/inputConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/background_input"
+            android:hint="@string/confirm_password"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="21dp"
+            android:paddingEnd="21dp"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+
+            tools:ignore="RtlSymmetry,TextFields" />
+        <Button
+            android:id="@+id/ButtonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="31dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="13dp"
+            android:background="@drawable/bckgr_color"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignIn"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:text="@string/sign_in"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+</ScrollView>

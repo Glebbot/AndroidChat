@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/primary"
+    tools:context=".activities.ChatInfoActivity">
+
+
+    <TextView
+        android:id="@+id/title_channel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="21dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintStart_toEndOf="@id/decorate"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/decorate"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_icon"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/background_content_top"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <FrameLayout
+            android:id="@+id/DecorLayout3"
+            android:layout_width="@dimen/_320sdp"
+            android:layout_height="@dimen/_155sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/background_chat_input"
+            android:backgroundTint="@color/input_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/DecorLayout4"
+            android:layout_width="@dimen/_320sdp"
+            android:layout_height="@dimen/_53sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/background_chat_input"
+            android:backgroundTint="@color/input_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_marginBottom="@dimen/_450sdp"
+                android:background="@drawable/background_content_bottom"
+                android:backgroundTint="@color/input_background" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_280sdp"
+            android:background="@drawable/background_icon"
+            android:backgroundTint="@color/error" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/LayoutProfilePicture"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_263sdp"
+        android:layout_marginBottom="@dimen/_500sdp"
+        android:background="@drawable/background_chat_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_1sdp"
+
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_addphoto"
+            android:tint="@color/white" />
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/DecorLayout2"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_265sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/background_chat_input"
+        android:backgroundTint="@color/input_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:gravity="center"
+        android:text="@string/set_group_picture"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LayoutProfilePicture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_125sdp"
+
+        android:text="@string/description_channel"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layoutWrite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/userlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:gravity="center"
+        android:text="@string/users_list"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:layout_marginRight="@dimen/_119sdp"
+        android:layout_marginTop="@dimen/_285sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+
+    <FrameLayout
+        android:id="@+id/layoutSend"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_263sdp"
+        android:layout_marginBottom="@dimen/_245sdp"
+        android:background="@drawable/background_chat_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/userimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/baseline_supervised_user_circle_24"
+            android:tint="@color/white" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutWrite"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_263sdp"
+        android:layout_marginBottom="@dimen/_440sdp"
+        android:background="@drawable/background_chat_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_draw"
+            android:tint="@color/white" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersRecyclerView"
+        android:layout_width="334dp"
+        android:layout_height="285dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:padding="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/userlist" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
